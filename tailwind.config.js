@@ -44,9 +44,7 @@ module.exports = {
       },
       animation: {
         'fade-in-up': 'fadeInUp 1s ease-out',
-        'rainbow-shift': 'rainbowShift 4s ease-in-out infinite',
         'float': 'float 20s ease-in-out infinite',
-        'ripple': 'ripple-animation 0.6s linear',
       },
       keyframes: {
         fadeInUp: {
@@ -59,25 +57,11 @@ module.exports = {
             transform: 'translateY(0)',
           },
         },
-        rainbowShift: {
-          '0%': { 'background-position': '0% 50%' },
-          '50%': { 'background-position': '100% 50%' },
-          '100%': { 'background-position': '0% 50%' },
-        },
         float: {
           '0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
           '33%': { transform: 'translateY(-20px) rotate(1deg)' },
           '66%': { transform: 'translateY(-10px) rotate(-1deg)' },
         },
-        'ripple-animation': {
-          'to': {
-            transform: 'scale(4)',
-            opacity: '0',
-          },
-        },
-      },
-      backdropBlur: {
-        xs: '2px',
       },
     },
   },

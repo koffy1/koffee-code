@@ -1,6 +1,6 @@
-# Koffee Code Business Website
+# Koffee Digital - Professional Web Development Services
 
-A professional website for Koffee Code - specialized web development services for small businesses in Dublin & Ireland. Built with modern Tailwind CSS for optimal performance and maintainability.
+A professional website for Koffee Digital - specialized web development services for small businesses in Dublin & Ireland. Built with modern Tailwind CSS for optimal performance and maintainability.
 
 ## 🚀 Technology Stack
 
@@ -12,7 +12,7 @@ A professional website for Koffee Code - specialized web development services fo
 ## 📁 Project Structure
 
 ```
-koffee-code-website/
+koffee-digital/
 ├── index.html              # Homepage - Hero, services overview, process
 ├── about.html              # About page - Company story, values, team
 ├── services.html           # Services page - Packages, pricing, features
@@ -60,8 +60,8 @@ koffee-code-website/
 ### Installation
 ```bash
 # Clone the repository
-git clone <repository-url>
-cd koffee-code-website
+git clone https://github.com/koffy1/koffee-digital.git
+cd koffee-digital
 
 # Install dependencies
 npm install
@@ -184,11 +184,17 @@ Add your tracking code before the closing `</body>` tag in each HTML file:
 
 ## 🤝 Contributing
 
-1. Fork the repository
-2. Create a feature branch
+1. Fork the repository at [https://github.com/koffy1/koffee-digital](https://github.com/koffy1/koffee-digital)
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
 3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
+4. Commit your changes (`git commit -m 'Add some amazing feature'`)
+5. Push to the branch (`git push origin feature/amazing-feature`)
+6. Open a Pull Request
+
+## 🔗 Repository
+
+- **GitHub**: [https://github.com/koffy1/koffee-digital](https://github.com/koffy1/koffee-digital)
+- **Clone URL**: `https://github.com/koffy1/koffee-digital.git`
 
 ## 📄 License
 
@@ -198,9 +204,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 For questions about this website:
 - **Email**: sholesikofoworola@gmail.com
-- **Phone**: +353 89 480 5043
-- **Business Hours**: Mon-Fri 10AM-6PM, Sat 12PM-8PM (Irish Time)
 
 ---
 
-**Koffee Code** - Professional websites for small businesses in Dublin & Ireland
+**Koffee Digital** - Professional websites for small businesses in Dublin & Ireland

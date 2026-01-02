@@ -1,28 +1,28 @@
 {
-  "name": "koffee-code-website",
+  "name": "koffee-digital-website",
   "version": "1.0.0",
-  "description": "Professional website for Koffee Code - Web Development Services",
+  "description": "Professional website for Koffee Digital - Web Development Services",
   "main": "index.html",
   "scripts": {
     "dev": "tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/output.css --watch",
     "build": "tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/output.css --minify",
+    "build:prod": "./build.sh",
     "serve": "python3 -m http.server 8000",
-    "start": "npm run dev"
+    "serve:prod": "cd dist && python3 -m http.server 8000",
+    "start": "npm run dev",
+    "clean": "rm -rf dist/ node_modules/.cache/",
+    "analyze": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/output.css --minify --verbose"
   },
   "keywords": [
     "web-development",
     "small-business",
     "dublin",
     "ireland",
-    "tailwindcss",
-    "alpinejs"
+    "tailwindcss"
   ],
-  "author": "Koffee Code",
+  "author": "Koffee Digital",
   "license": "MIT",
   "devDependencies": {
     "tailwindcss": "^3.4.0"
-  },
-  "dependencies": {
-    "alpinejs": "^3.13.0"
   }
 }
