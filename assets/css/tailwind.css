@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom base styles */
+@layer base {
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    line-height: 1.625;
+  }
+  
+  h1, h2, h3, h4, h5, h6, body {
+    @apply text-slate-950;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: -0.025em;
+  }
+  
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold;
+    letter-spacing: -0.05em;
+  }
+  
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl font-semibold;
+  }
+  
+  h3 {
+    @apply text-2xl md:text-3xl lg:text-4xl font-semibold;
+  }
+  
+  p {
+    @apply text-base md:text-lg text-slate-600;
+    line-height: 1.625;
+  }
+}
+
+/* Custom component styles */
+@layer components {
+  .btn-primary {
+    @apply relative inline-block overflow-hidden rounded-full bg-gradient-to-r from-primary-500 to-secondary-500 px-6 py-3 md:px-8 md:py-4 font-semibold uppercase tracking-wide text-white transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary-500/40;
+  }
+  
+  .btn-secondary {
+    @apply inline-block rounded-full border-2 border-primary-500 px-6 py-3 md:px-8 md:py-4 font-semibold uppercase tracking-wide text-primary-500 transition-all duration-300 hover:-translate-y-1 hover:border-transparent hover:bg-gradient-to-r hover:from-primary-500 hover:to-secondary-500 hover:text-white hover:shadow-xl hover:shadow-primary-500/40;
+  }
+  
+  .card {
+    @apply rounded-2xl border border-primary-200/20 bg-white/90 p-6 md:p-8 shadow-xl backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary-500/10;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary-500 to-secondary-500 bg-clip-text text-transparent;
+  }
+  
+  .hero-bg {
+    @apply relative overflow-hidden bg-gradient-to-br from-slate-950 via-slate-850 to-slate-800;
+  }
+  
+  .section-bg {
+    @apply relative overflow-hidden bg-gradient-to-br from-slate-50 to-slate-100;
+  }
+}
+
+/* Custom utility styles */
+@layer utilities {
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .animate-ripple {
+    animation: ripple-animation 0.6s linear;
+  }
+  
+  @keyframes ripple-animation {
+    to {
+      transform: scale(4);
+      opacity: 0;
+    }
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-slate-100;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply rounded bg-gradient-to-b from-primary-500 to-secondary-500;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gradient-to-b from-primary-600 to-purple-600;
+  }
+}
