@@ -49,12 +49,12 @@ class Footer {
                             <div>
                                 <h4 class="text-lg font-semibold mb-4 text-white">Our Services</h4>
                                 <ul class="space-y-2">
-                                    <li><a href="services.html#small-business-website" class="text-slate-300 hover:text-primary-400 transition-colors duration-300">Small Business Website Package</a></li>
-                                    <li><a href="services.html#professional-services-website" class="text-slate-300 hover:text-primary-400 transition-colors duration-300">Professional Services Website</a></li>
-                                    <li><a href="services.html#website-maintenance" class="text-slate-300 hover:text-primary-400 transition-colors duration-300">Website Care & Maintenance</a></li>
-                                    <li><a href="services.html#local-seo" class="text-slate-300 hover:text-primary-400 transition-colors duration-300">Local SEO & Google My Business</a></li>
-                                    <li><a href="services.html#website-hosting" class="text-slate-300 hover:text-primary-400 transition-colors duration-300">Website Hosting</a></li>
-                                    <li><a href="services.html#packages" class="text-slate-300 hover:text-primary-400 transition-colors duration-300">Website Packages</a></li>
+                                    <li><a href="/services/#small-business-website" class="text-slate-300 hover:text-primary-400 transition-colors duration-300">Small Business Website Package</a></li>
+                                    <li><a href="/services/#professional-services-website" class="text-slate-300 hover:text-primary-400 transition-colors duration-300">Professional Services Website</a></li>
+                                    <li><a href="/services/#website-maintenance" class="text-slate-300 hover:text-primary-400 transition-colors duration-300">Website Care & Maintenance</a></li>
+                                    <li><a href="/services/#local-seo" class="text-slate-300 hover:text-primary-400 transition-colors duration-300">Local SEO & Google My Business</a></li>
+                                    <li><a href="/services/#website-hosting" class="text-slate-300 hover:text-primary-400 transition-colors duration-300">Website Hosting</a></li>
+                                    <li><a href="/services/#packages" class="text-slate-300 hover:text-primary-400 transition-colors duration-300">Website Packages</a></li>
                                 </ul>
                             </div>
 
@@ -62,12 +62,12 @@ class Footer {
                             <div>
                                 <h4 class="text-lg font-semibold mb-4 text-white">About Us</h4>
                                 <ul class="space-y-2">
-                                    <li><a href="about.html" class="text-slate-300 hover:text-primary-400 transition-colors duration-300">Why Koffee Digital Exists</a></li>
-                                    <li><a href="about.html#small-business-focus" class="text-slate-300 hover:text-primary-400 transition-colors duration-300">Supporting Local Small Businesses</a></li>
-                                    <li><a href="about.html#expertise" class="text-slate-300 hover:text-primary-400 transition-colors duration-300">Our Technical Expertise & Approach</a></li>
-                                    <li><a href="about.html#values" class="text-slate-300 hover:text-primary-400 transition-colors duration-300">Our Values & Commitment to Small Business Success</a></li>
-                                    <li><a href="about.html#team" class="text-slate-300 hover:text-primary-400 transition-colors duration-300">Our Development Approach</a></li>
-                                    <li><a href="about.html#industries" class="text-slate-300 hover:text-primary-400 transition-colors duration-300">Industries We Serve</a></li>
+                                    <li><a href="/about/" class="text-slate-300 hover:text-primary-400 transition-colors duration-300">Why Koffee Digital Exists</a></li>
+                                    <li><a href="/about/#small-business-focus" class="text-slate-300 hover:text-primary-400 transition-colors duration-300">Supporting Local Small Businesses</a></li>
+                                    <li><a href="/about/#expertise" class="text-slate-300 hover:text-primary-400 transition-colors duration-300">Our Technical Expertise & Approach</a></li>
+                                    <li><a href="/about/#values" class="text-slate-300 hover:text-primary-400 transition-colors duration-300">Our Values & Commitment</a></li>
+                                    <li><a href="/about/#team" class="text-slate-300 hover:text-primary-400 transition-colors duration-300">Our Development Approach</a></li>
+                                    <li><a href="/about/#industries" class="text-slate-300 hover:text-primary-400 transition-colors duration-300">Industries We Serve</a></li>
                                 </ul>
                             </div>
 
@@ -75,9 +75,9 @@ class Footer {
                             <div>
                                 <h4 class="text-lg font-semibold mb-4 text-white">Get Started</h4>
                                 <ul class="space-y-2">
-                                    <li><a href="contact.html" class="text-slate-300 hover:text-primary-400 transition-colors duration-300">Free, No-Pressure Consultation</a></li>
-                                    <li><a href="contact.html#contact-form" class="text-slate-300 hover:text-primary-400 transition-colors duration-300">Send Us a Message</a></li>
-                                    <li><a href="index.html#process" class="text-slate-300 hover:text-primary-400 transition-colors duration-300">Our Development Process</a></li>
+                                    <li><a href="/contact/" class="text-slate-300 hover:text-primary-400 transition-colors duration-300">Free, No-Pressure Consultation</a></li>
+                                    <li><a href="/contact/#contact-form" class="text-slate-300 hover:text-primary-400 transition-colors duration-300">Send Us a Message</a></li>
+                                    <li><a href="/#process" class="text-slate-300 hover:text-primary-400 transition-colors duration-300">Our Development Process</a></li>
                                 </ul>
                             </div>
                         </div>

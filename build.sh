@@ -17,6 +17,12 @@ npx tailwindcss -i ./assets/css/tailwind.css -o ./dist/assets/css/output.css --m
 echo "📄 Copying HTML files..."
 cp *.html dist/
 
+# Copy directory-based pages
+echo "📁 Copying directory-based pages..."
+cp -r about dist/
+cp -r services dist/
+cp -r contact dist/
+
 # Copy optimized JavaScript
 echo "⚡ Copying optimized JavaScript..."
 cp assets/js/app.js dist/assets/js/
@@ -44,19 +50,19 @@ cat > dist/sitemap.xml << EOF
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://digital.koffeeplace.com/about.html</loc>
+        <loc>https://digital.koffeeplace.com/about</loc>
         <lastmod>$(date +%Y-%m-%d)</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://digital.koffeeplace.com/services.html</loc>
+        <loc>https://digital.koffeeplace.com/services</loc>
         <lastmod>$(date +%Y-%m-%d)</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://digital.koffeeplace.com/contact.html</loc>
+        <loc>https://digital.koffeeplace.com/contact</loc>
         <lastmod>$(date +%Y-%m-%d)</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
