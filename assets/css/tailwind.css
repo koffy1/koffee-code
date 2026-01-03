@@ -84,6 +84,46 @@
     scroll-padding-top: 100px;
   }
   
+  /* Ultra-narrow screen optimizations for Samsung Fold 4 */
+  @media (max-width: 280px) {
+    .max-w-6xl {
+      max-width: 100%;
+    }
+    
+    .px-4 {
+      padding-left: 0.5rem !important;
+      padding-right: 0.5rem !important;
+    }
+    
+    .p-6 {
+      padding: 0.75rem !important;
+    }
+    
+    .gap-4 {
+      gap: 0.5rem !important;
+    }
+    
+    .text-4xl {
+      font-size: 1.5rem !important;
+    }
+    
+    .text-3xl {
+      font-size: 1.25rem !important;
+    }
+    
+    .text-2xl {
+      font-size: 1.125rem !important;
+    }
+    
+    .text-xl {
+      font-size: 1rem !important;
+    }
+    
+    .rounded-2xl {
+      border-radius: 0.5rem !important;
+    }
+  }
+  
   .btn-primary {
     @apply relative inline-flex items-center justify-center gap-3 overflow-hidden rounded-full bg-gradient-to-r from-primary-500 to-secondary-500 px-6 py-3 md:px-8 md:py-4 font-semibold uppercase tracking-wide text-white transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary-500/40 focus:outline-none focus:ring-4 focus:ring-primary-500/50;
   }

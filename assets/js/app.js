@@ -14,14 +14,21 @@
         
         getCurrentPage: function() {
             const path = window.location.pathname;
-            const page = path.split('/').pop() || 'index.html';
-            return page.replace('.html', '');
+            // Handle directory-based structure
+            if (path === '/' || path === '/index.html') {
+                return 'index';
+            }
+            // Remove leading slash and trailing slash for directory paths
+            const cleanPath = path.replace(/^\/|\/$/g, '');
+            return cleanPath || 'index';
         },
         
         isActivePage: function(page, currentPage) {
+            // Handle homepage
             if (page === 'index' && (currentPage === 'index' || currentPage === '')) {
                 return true;
             }
+            // Handle other pages
             return currentPage === page;
         }
     };
@@ -50,10 +57,12 @@
                     <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div class="flex justify-between items-center py-4">
                             <div class="logo">
-                                <h1 class="text-2xl font-display font-bold italic tracking-tight text-white">
-                                    <span class="text-primary-400">Koffee</span>
-                                    <span class="text-primary-400"> Digital</span>
-                                </h1>
+                                <a href="/" class="block">
+                                    <h1 class="text-2xl font-display font-bold italic tracking-tight text-white hover:text-primary-300 transition-colors duration-300">
+                                        <span class="text-primary-400">Koffee</span>
+                                        <span class="text-primary-400"> Digital</span>
+                                    </h1>
+                                </a>
                             </div>
                             <ul class="hidden md:flex space-x-8">
                                 <li><a href="/" class="${this.getNavLinkClass('index')}">Home</a></li>
