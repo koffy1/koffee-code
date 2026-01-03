@@ -1,4 +1,16 @@
 User-agent: *
 Allow: /
+Disallow: /assets/
+Disallow: /node_modules/
+Disallow: /dist/
+Disallow: /*.json$
+Disallow: /*.md$
+
+# Allow important assets
+Allow: /assets/css/
+Allow: /assets/js/
 
 Sitemap: https://digital.koffeeplace.com/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
