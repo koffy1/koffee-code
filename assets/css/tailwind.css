@@ -122,6 +122,169 @@
     .rounded-2xl {
       border-radius: 0.5rem !important;
     }
+    
+    /* Contact page specific fixes */
+    .contact-section h2 {
+      font-size: 1.5rem !important;
+      line-height: 1.3 !important;
+      word-break: break-word;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      white-space: normal;
+    }
+    
+    .contact-section p {
+      font-size: 0.875rem !important;
+      line-height: 1.4 !important;
+      word-break: break-word;
+      hyphens: auto;
+    }
+    
+    /* Fix form container */
+    .contact-form-container {
+      padding: 0.75rem !important;
+      margin: 0 !important;
+      width: 100% !important;
+      box-sizing: border-box;
+    }
+    
+    /* Fix form inputs */
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+      font-size: 14px !important;
+      padding: 0.5rem !important;
+      width: 100% !important;
+      box-sizing: border-box;
+    }
+    
+    /* Fix grid layouts for ultra-narrow screens */
+    .contact-form .grid-cols-2 {
+      grid-template-columns: 1fr !important;
+    }
+    
+    /* Fix info cards */
+    .info-card {
+      padding: 0.75rem !important;
+      margin-bottom: 0.75rem !important;
+      width: 100% !important;
+      box-sizing: border-box;
+    }
+    
+    .info-card h3 {
+      font-size: 1rem !important;
+      word-break: break-word;
+    }
+    
+    .info-card p {
+      font-size: 0.8rem !important;
+      word-break: break-word;
+      hyphens: auto;
+    }
+    
+    /* Fix emoji sizing */
+    .info-card .text-4xl {
+      font-size: 1.5rem !important;
+    }
+    
+    /* Fix button sizing */
+    .btn-primary,
+    .btn-secondary {
+      padding: 0.5rem 1rem !important;
+      font-size: 0.875rem !important;
+      width: 100% !important;
+      text-align: center;
+    }
+    
+    /* Fix phone number input container */
+    .phone-container {
+      flex-direction: column !important;
+      gap: 0.5rem !important;
+    }
+    
+    .phone-container select {
+      width: 100% !important;
+    }
+    
+    /* International telephone input fixes */
+    .iti {
+      width: 100% !important;
+      display: block !important;
+    }
+    
+    .iti__country-list {
+      max-height: 200px !important;
+      overflow-y: auto !important;
+    }
+    
+    .iti__selected-flag {
+      padding: 0.5rem !important;
+    }
+    
+    /* Ensure phone input spans full width */
+    .iti__tel-input {
+      width: 100% !important;
+      box-sizing: border-box !important;
+    }
+    
+    /* Force full width for phone container */
+    #phone {
+      width: 100% !important;
+    }
+    
+    /* Additional specificity for intl-tel-input */
+    .contact-form .iti,
+    .contact-form .iti__tel-input {
+      width: 100% !important;
+      max-width: 100% !important;
+      min-width: 100% !important;
+    }
+    
+    /* Fix container padding */
+    .max-w-6xl {
+      padding-left: 0.5rem !important;
+      padding-right: 0.5rem !important;
+    }
+    
+    /* Fix section spacing */
+    .py-16,
+    .py-24 {
+      padding-top: 2rem !important;
+      padding-bottom: 2rem !important;
+    }
+    
+    /* Fix gap spacing */
+    .gap-12,
+    .gap-16 {
+      gap: 1rem !important;
+    }
+    
+    /* Ensure no horizontal overflow */
+    body, html {
+      overflow-x: hidden;
+    }
+    
+    /* Fix any potential text overflow */
+    * {
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+  }
+  
+  /* Additional fixes for screens between 280px and 320px */
+  @media (min-width: 281px) and (max-width: 320px) {
+    .contact-section h2 {
+      font-size: 1.75rem !important;
+      line-height: 1.25 !important;
+    }
+    
+    .info-card {
+      padding: 1rem !important;
+    }
+    
+    .contact-form-container {
+      padding: 1rem !important;
+    }
   }
   
   .btn-primary {
